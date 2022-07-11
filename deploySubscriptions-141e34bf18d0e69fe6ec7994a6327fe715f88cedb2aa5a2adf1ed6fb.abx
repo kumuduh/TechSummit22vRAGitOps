@@ -1,0 +1,21 @@
+---
+exportVersion: "1"
+exportId: "8a7481a378c98d03017c4c6179040094"
+name: "deploySubscriptions"
+runtime: "python"
+entrypoint: "handler"
+description: "Import Subscriptions from git repo"
+inputs:
+  gitRepo: "kumuduh/TechSummit22vRAGitOps"
+  gitBranch: "main"
+  apiVersion: "2020-08-25"
+  vraBaseUrl: "https://vra-01a.corp.local"
+  gitHubToken: "ghp_dmXXXXXXXXXXXXXX"
+  projectName: "Field Demo"
+  vraAPIToken: "18XC0Rt6PA61E5ih3zkAAGtLe8l5zup9"
+  releaseVersion: "v1.0.9.30"
+timeoutSeconds: 600
+deploymentTimeoutSeconds: 900
+dependencies: "requests\ndatetime\nPyGithub"
+actionType: "SCRIPT"
+memoryInMB: 300

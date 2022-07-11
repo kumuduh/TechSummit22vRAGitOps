@@ -1,0 +1,19 @@
+---
+exportVersion: "1"
+exportId: "8a74806d78e2182f017bf62b57370034"
+name: "pushABXActionsToGit"
+runtime: "python"
+entrypoint: "handler"
+description: "Push vRA ABX Actions to git"
+inputs:
+  gitRepo: "kumuduh/TechSummit22vRAGitOps"
+  apiVersion: "2020-08-25"
+  vraBaseUrl: "https://vra-01a.corp.local"
+  gitHubToken: "ghp_dmXXXXXXXXXXXXXX"
+  vraAPIToken: "18XC0Rt6PA61E5ih3zkAAGtLe8l5zup9"
+  createMergeRequest: "false"
+timeoutSeconds: 600
+deploymentTimeoutSeconds: 900
+dependencies: "requests\ndatetime\nPyGithub"
+actionType: "SCRIPT"
+memoryInMB: 300

@@ -1,0 +1,20 @@
+---
+exportVersion: "1"
+exportId: "8a7482be78e2198a017c62051dd6015f"
+name: "pushvRAConfigImageProfiles"
+runtime: "python"
+entrypoint: "handler"
+description: "Push vRA Image profiles into git"
+inputs:
+  gitRepo: "kumuduh/TechSummit22vRAGitOps"
+  vRASite: "PA"
+  apiVersion: "2020-08-25"
+  vraBaseUrl: "https://vra-01a.corp.local"
+  gitHubToken: "ghp_dmXXXXXXXXXXXXXX"
+  vraAPIToken: "18XC0Rt6PA61E5ih3zkAAGtLe8l5zup9"
+  createMergeRequest: "true"
+timeoutSeconds: 600
+deploymentTimeoutSeconds: 900
+dependencies: "requests\ndatetime\nPyGithub"
+actionType: "SCRIPT"
+memoryInMB: 300

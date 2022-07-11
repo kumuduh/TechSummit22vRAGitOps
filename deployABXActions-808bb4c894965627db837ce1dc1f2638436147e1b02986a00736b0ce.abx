@@ -1,0 +1,21 @@
+---
+exportVersion: "1"
+exportId: "8a7481a378c98d03017c4c64245b0096"
+name: "deployABXActions"
+runtime: "python"
+entrypoint: "handler"
+description: "Import ABX Actions from git repo"
+inputs:
+  gitRepo: "kumuduh/TechSummit22vRAGitOps"
+  gitBranch: "main"
+  apiVersion: "2020-08-25"
+  vraBaseUrl: "https://vra-01a.corp.local"
+  gitHubToken: "ghp_dmXXXXXXXXXXXXXX"
+  projectName: "Field Demo"
+  vraAPIToken: "W3CWntJOIY4AxAkMVPhFlXBopSf556m5"
+  releaseVersion: "v1.0.10.1"
+timeoutSeconds: 600
+deploymentTimeoutSeconds: 900
+dependencies: "requests\ndatetime\nPyGithub"
+actionType: "SCRIPT"
+memoryInMB: 300

@@ -1,0 +1,20 @@
+---
+exportVersion: "1"
+exportId: "8a7482be78e2198a017c61c54c980158"
+name: "pushvRAConfigCloudZones "
+runtime: "python"
+entrypoint: "handler"
+description: "Push vRA Cloud Zones into git"
+inputs:
+  gitRepo: "kumuduh/TechSummit22vRAGitOps"
+  vRASite: "PA"
+  apiVersion: "2020-08-25"
+  vraBaseUrl: "https://vra-01a.corp.local"
+  gitHubToken: "ghp_dmXXXXXXXXXXXXXX"
+  vraAPIToken: "18XC0Rt6PA61E5ih3zkAAGtLe8l5zup9"
+  createMergeRequest: "false"
+timeoutSeconds: 600
+deploymentTimeoutSeconds: 900
+dependencies: "requests\ndatetime\nPyGithub"
+actionType: "SCRIPT"
+memoryInMB: 300
