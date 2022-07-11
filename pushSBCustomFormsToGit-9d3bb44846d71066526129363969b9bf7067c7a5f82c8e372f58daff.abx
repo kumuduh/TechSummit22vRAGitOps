@@ -1,0 +1,19 @@
+---
+exportVersion: "1"
+exportId: "8a7482be78e2198a017c1353b396008a"
+name: "pushSBCustomFormsToGit"
+runtime: "python"
+entrypoint: "handler"
+description: "Push vRA Service Broker Custom Forms to git"
+inputs:
+  gitRepo: "kumuduh/TechSummit22vRAGitOps"
+  apiVersion: "2020-08-25"
+  vraBaseUrl: "https://vra-01a.corp.local"
+  gitHubToken: "ghp_dmXXXXXXXXXXXXXX"
+  vraAPIToken: "18XC0Rt6PA61E5ih3zkAAGtLe8l5zup9"
+  createMergeRequest: "false"
+timeoutSeconds: 600
+deploymentTimeoutSeconds: 900
+dependencies: "requests\ndatetime\nPyGithub"
+actionType: "SCRIPT"
+memoryInMB: 300

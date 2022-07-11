@@ -1,0 +1,21 @@
+---
+exportVersion: "1"
+exportId: "8a7481a378c98d03017c4c5f0c1e0092"
+name: "deploySBCustomForms"
+runtime: "python"
+entrypoint: "handler"
+description: "Import Service Broker Custom Forms to a project from git repo"
+inputs:
+  gitRepo: "kumuduh/TechSummit22vRAGitOps"
+  gitBranch: "main"
+  apiVersion: "2020-08-25"
+  vraBaseUrl: "https://vra-01a.corp.local"
+  gitHubToken: "ghp_dmXXXXXXXXXXXXXX"
+  projectName: "Field Demo"
+  vraAPIToken: "18XC0Rt6PA61E5ih3zkAAGtLe8l5zup9"
+  releaseVersion: "v1.0.9.23"
+timeoutSeconds: 600
+deploymentTimeoutSeconds: 900
+dependencies: "requests\ndatetime\nPyGithub\npyyaml"
+actionType: "SCRIPT"
+memoryInMB: 300

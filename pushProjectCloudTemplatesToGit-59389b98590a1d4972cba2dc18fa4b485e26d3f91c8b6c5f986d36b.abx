@@ -1,0 +1,18 @@
+---
+exportVersion: "1"
+exportId: "8a7480687b85a134017ba3194262199a"
+name: "pushProjectCloudTemplatesToGit"
+runtime: "python"
+entrypoint: "handler"
+description: "push vRA Cloud Templates to git"
+inputs:
+  gitRepo: "kumuduh/TechSummit22vRAGitOps"
+  apiVersion: "2020-08-25"
+  gitHubToken: "ghp_dmXXXXXXXXXXXXXX"
+  projectName: "Field Demo"
+  createMergeRequest: "false"
+timeoutSeconds: 600
+deploymentTimeoutSeconds: 900
+dependencies: "requests\ndatetime\nPyGithub"
+actionType: "SCRIPT"
+memoryInMB: 300
